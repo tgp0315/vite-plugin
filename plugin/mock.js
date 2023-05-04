@@ -1,15 +1,10 @@
-
 import fs from 'fs'
-import path from 'path'
+
 export default (options) => {
-  // 主要功能拦截http请求
-  // 当使用fetch axios请求时
-  // 当打到本地开发服务器的时候，viteserver服务器接管
   return {
-    name: 'vite-mock',
+    name: 'vite-plugin-mock',
     configureServer(server) {
       // 服务器相关配置
-
       const mockStat = fs.statSync('mock')
       // console.log(mockStat, 'result')
       const isDirectory = mockStat.isDirectory()

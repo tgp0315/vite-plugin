@@ -36,6 +36,7 @@ function getTotalDir() {
 }
 export default () => {
   return {
+    name: 'vite-plugin-aliases',
     config(config, env) {
       // console.log(config, env, 'env')
       // config 目前的一个配置对象

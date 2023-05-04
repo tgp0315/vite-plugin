@@ -1,5 +1,7 @@
 import { createApp } from 'vue'
+import zimu from "virtual:my-virtual-file"
+console.log(zimu)
 import './style.css'
 import App from './App.vue'
-import '@utils/index.js'
+
 createApp(App).mount('#app')
